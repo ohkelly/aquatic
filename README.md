@@ -11,6 +11,9 @@ Welcome to the Aquaponics AI Assistant project AquaECO AI developed during AI fo
 
 ## Installation
 
+![System Screenshot](data/aqua.png)
+
+
 ### 1. Clone the repository:
 
 ```bash
