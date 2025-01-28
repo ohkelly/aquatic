@@ -1,4 +1,4 @@
-# Aquaponics AI Assistant
+# Aquaponics AI Assistant - AquaECO Assistant
 
 Welcome to the Aquaponics AI Assistant project AquaECO AI developed during AI for Energy Solution MIT 2025! This Streamlit app helps visualize real-time system performance metrics, including energy usage and water quality parameters, while also providing an AI assistant to assist with queries related to your aquaponics system.
 
