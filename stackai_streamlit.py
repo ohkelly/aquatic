@@ -39,7 +39,7 @@ if option == "Dashboard":
     chart_data = pd.DataFrame(energy_df, columns=["solar", "biogas", "wind"])
     st.line_chart(chart_data)
 
-    # Water Quality Metrics
+    # Water Quality Metrics    PS C:\Users\engre\Projects\aquatic> conda activate aquatic
     st.subheader("Water Quality Parameters")
     st.dataframe(water_quality_df)
     chart_data1 = pd.DataFrame(water_quality_df, columns=["temperature", "humidity"])
