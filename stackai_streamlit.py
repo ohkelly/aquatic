@@ -30,7 +30,8 @@ if option == "Dashboard":
     
     
     # Display real-time metrics and historical data for energy and water quality csv files
-    dataset = "https://github.com/ohkelly/aquatic/tree/main/data"
+    dataset = ""
+    energy_data = "https://github.com/ohkelly/aquatic/tree/main/data"
     energy_data = f"{dataset}/energy_data.csv"
     water_quality_data = f"{dataset}/sensor_data.csv"
     # Convert csv files to dataframes
