@@ -12,6 +12,26 @@ import streamlit as st
 import streamlit.components.v1 as components
 from plotly.subplots import make_subplots
 
+# Check if password is already verified in session state
+if 'authenticated' not in st.session_state:
+    st.session_state['authenticated'] = False
+
+# If not authenticated, show the password input
+if not st.session_state['authenticated']:
+    st.title("🔒 Private App - Authentication Required")
+    password = st.text_input("Enter the password to access the app:", type="password")
+    
+    if password:
+        if password == "AquaponicsAssociation@2025": # Replace with your actual password
+            st.session_state['authenticated'] = True
+            st.rerun() # Rerun the script to show the main app
+        else:
+            st.error("Incorrect password. Please try again.")
+    st.stop() # Stop execution here, preventing the rest of the app from showing
+
+# If the code gets here, the user is authenticated. Show your main app.
+st.title("My Private App")
+# ... the rest of your app's code goes here ...
 # ==============================================
 # CONSTANTS (UPPER_SNAKE_CASE)
 # ==============================================
